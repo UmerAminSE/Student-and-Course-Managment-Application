@@ -1,0 +1,22 @@
+.nav-wrapper {
+    background-color: rgba(88, 177, 221, 0.1);
+    height: 100vh;
+    width: 200px; /* Set width for the navigation bar */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.nav-button {
+    border: 2px;
+    border-color: black;
+    background-color: transparent;
+    color: rgb(26, 15, 15);
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.50s ease;
+}
+
+.nav-button:hover {
+    background-color: rgba(66, 203, 128, 0.567); /* Change the background color on hover */
+}

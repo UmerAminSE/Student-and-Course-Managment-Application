@@ -1,0 +1,45 @@
+stages:
+  - build_frontend
+  - build_backend
+  - test
+  - build_docker
+  - deploy
+
+variables:
+  DOCKER_IMAGE_NAME: postgres
+  DOCKER_REGISTRY: registry.example.com
+  DOCKER_TAG: latest
+
+before_script:
+  - npm install -g yarn
+
+build_frontend:
+  stage: build_frontend
+  script:
+    - cd Education/Education_Frontend
+    - yarn install
+    - yarn build
+
+build_backend:
+  stage: build_backend
+  script:
+    - cd education-api/Education_backend
+    - ./mvnw package -DskipTests
+
+test:
+  stage: test
+  script:
+    - cd backend_directory
+    - ./mvnw test
+
+build_docker:
+  stage: build_docker
+  script:
+    - docker build -t $DOCKER_REGISTRY/$DOCKER_IMAGE_NAME:$DOCKER_TAG .
+
+deploy:
+  stage: deploy
+  script:
+    - docker push $DOCKER_REGISTRY/$DOCKER_IMAGE_NAME:$DOCKER_TAG
+  only:
+    - master  # Deploy only from the master branch

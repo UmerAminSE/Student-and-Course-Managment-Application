@@ -1,0 +1,22 @@
+version: '3'
+services:
+  frontend:
+    build: ./Education_FrontEND
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+  backend:
+    build: ./Education_Backend\project-1\education
+    ports:
+      - "8080:8080"
+    depends_on:
+      - database
+  database:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 12345
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"

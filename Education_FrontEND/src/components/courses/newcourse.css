@@ -1,0 +1,37 @@
+.nav-button {
+    border: 2px;
+    border-color: black;
+    background-color: transparent;
+    color: rgb(26, 15, 15);
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.50s ease;
+}
+
+.nav-button:hover {
+    background-color: rgba(3, 108, 255, 0.863);
+    border: 2px; /* Change the background color on hover */
+}
+.course-form{
+    border: 2px;
+    box-shadow: 0 0 10px 5px rgba(193, 203, 220, 0.992);
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 70%;
+    height: 7cm;
+    
+}
+
+.nav-background{
+    width: 5cm;
+    height: 22vh;
+    background-color: rgba(88, 177, 221, 0.1);
+
+}
+.formButton{
+  size: 2cm;
+  width: 4cm;
+  margin-left: 2%;
+
+}

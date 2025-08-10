@@ -1,0 +1,36 @@
+.custom-container {
+    
+    height: 88vh;
+     width: 250vh;
+    margin-left: 20%;
+    padding: 10%;
+    padding-left: 10%;
+    
+   
+  }
+  .customsection1 {
+     
+     border: '2px';
+     padding-top: 0.5cm;
+     width: 8cm;
+     height: 8cm;
+     margin-left: 3cm;
+     padding-bottom: 1cm;
+     outline-style: hidden;
+     text-align: center;
+     box-shadow: 0 0 10px 5px rgba(105, 147, 209, 0.992);
+     
+     
+
+
+  }
+  
+  .customheading-mainpage {
+     font-size: 48px;
+     text-align: center;
+     color: rgb(44, 144, 215);
+     margin-top: 30px;
+     margin-bottom: 50px;
+     margin-right: 10px;
+     
+  }
