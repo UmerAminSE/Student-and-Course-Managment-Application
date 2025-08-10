@@ -1,12 +1,7 @@
 package com.project1.education.course;
 
-import com.fasterxml.jackson.annotation.*;
-import com.project1.education.assignment.Assignment;
-import com.project1.education.student.Student;
 import jakarta.persistence.*;
 import lombok.*;
-
-import java.util.List;
 
 @Entity
 @Setter

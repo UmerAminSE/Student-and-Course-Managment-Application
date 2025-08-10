@@ -1,12 +1,5 @@
 package com.project1.education.course;
 
-import com.project1.education.assignment.AssignmentRequest;
-import com.project1.education.exception.AlreadyRegisteredException;
-import com.project1.education.exception.EndTimeIsBeforeStartTimeException;
-import com.project1.education.exception.NotYetRegisteredException;
-import com.project1.education.exception.StartTimeIsBeforeNowException;
-import com.project1.education.grade.GradeRequest;
-import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
